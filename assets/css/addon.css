@@ -1,0 +1,160 @@
+.header {
+    background-color: rgba(0, 0, 0, .2);
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+}
+
+.header-brand {
+    height: 1.5rem;
+}
+
+/* .avatar-img div::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: solid 2px #fff;
+    z-index: -100;
+    margin-top: calc(-100% + 15px);
+    margin-left: 20px;
+} */
+
+.jumbotron-img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 275px;
+    max-height: 275px;
+    border-radius: 0rem;
+    border: none;
+    margin-bottom: 0;
+    box-shadow: 5px 5px 40px rgba(255, 255, 255, .2);
+}
+
+@media screen and (max-width: 991.98px) {
+    .jumbotron-img {
+        margin-bottom: 3rem;
+    }
+}
+
+.modal-content {
+    flex-direction: row;
+}
+
+.modal-side {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    right: 30px;
+    max-height: 99vh;
+}
+
+.modal-close {
+    background: rgba(0, 0, 0, 0) url("../img/cross.svg");
+    background-size: cover;
+}
+
+.modal-body .modal-close {
+    position: absolute;
+    right: 16px;
+}
+
+.modal-like {
+    width: 35px;
+    width: 2.5rem;
+    height: 35px;
+    height: 2.5rem;
+    background: rgba(0, 0, 0, 0) url("../img/heart.svg");
+    background-size: cover;
+    border: 0;
+    display: none;
+}
+
+.modal-like:hover {
+    text-decoration: none
+}
+
+.animation-heart-beat {
+    -webkit-animation: hvr-wobble-vertical 2s linear infinite;
+    animation: hvr-wobble-vertical 2s linear infinite;
+    transform: perspective(1px) translateZ(0);
+}
+
+/* Wobble Vertical */
+@-webkit-keyframes hvr-wobble-vertical {
+    16.65% {
+        transform: translateY(-6px);
+    }
+
+    33.3% {
+        transform: translateY(2px);
+    }
+
+    49.95% {
+        transform: translateY(-4px);
+    }
+
+    66.6% {
+        transform: translateY(1px);
+    }
+
+    83.25% {
+        transform: translateY(-1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes hvr-wobble-vertical {
+    16.65% {
+        transform: translateY(-6px);
+    }
+
+    33.3% {
+        transform: translateY(2px);
+    }
+
+    49.95% {
+        transform: translateY(-4px);
+    }
+
+    66.6% {
+        transform: translateY(1px);
+    }
+
+    83.25% {
+        transform: translateY(-1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#total-exp {
+    font-weight: 600;
+    color: hsla(0, 0%, 100%, .6);    
+}
+
+.timeline[data-level="2"] .timeline-item {
+    margin-bottom: 3rem;
+}
+
+.timeline[data-level="2"] .timeline-item:last-of-type {
+    margin-bottom: 0;
+}
+
+/* ---------- SCROLL BAR ----------- */
+
+::-webkit-scrollbar {
+    background-color: #353535;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF;
+}
